@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("css/OpenSans-LightItalic.ttf") format("truetype");
+}
+body{
+    padding: 0% 20% 1% 20%;
+    background:url('img/fondo9.png') fixed no-repeat;
+    background-size:100%;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: foto; }
+.item3 { grid-area: hello; }
+.item4 { grid-area: about-me; }
+.item5 { grid-area: redes; }
+.item6 { grid-area: descuento; }
+.item7 { grid-area: texto; }
+.item8 { grid-area: redes2; }
+.item9 { grid-area: titulo; }
+
+
+.grid-container {
+    border-radius:30px;
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'foto foto hello hello'
+    'foto foto hello hello'
+    'about-me about-me about-me about-me';
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.grid-container > div {
+    text-align: left;
+    padding: 15px 15px;
+    font-size: 30px;
+}
+.footer {
+    padding:1% 1% 1% 1%;
+    border-radius:30px;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'redes';
+    background-color: rgba(0, 0, 0);
+}
+.footer > div {
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 30px;
+    color:white;
+}
+.newsletter {
+    padding:1% 1% 1% 1%;
+    border-radius:30px;
+    display: grid;
+    grid-template-areas:
+    'descuento titulo titulo titulo titulo titulo'
+    'descuento foto foto foto foto redes2'
+    'descuento foto foto foto foto redes2'
+    'texto texto texto texto texto texto';
+    background:url('img/newsletter.png') no-repeat;
+    background-color: rgb(98, 206, 214);
+    background-size:100%;
+}
+.item3 {
+    margin-top:20%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+.small{
+    font-size:75%;
+}
+.big{
+    font-size:150%;
+    font-weight: bold;
+}
+.font{
+    font-size:100%;
+    font-family: "Open Sans";
+}
+input[type=submit] {
+    border-radius:30px;
+    font-size:15px;
+    padding:8px 10px 8px 10px;
+    color:black;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+.item4 {
+    color:white;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius:30px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.uno{
+    font-size: 30px;
+    font-weight: bold;
+}
+.dos{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Open Sans";
+}
+.tres{
+    font-size: 15px;
+}
+.item5 > a > img:hover {
+    border-radius:20px;
+    background-color: rgba(255, 255, 255);
+}
+.item8{
+    margin-top:43%;
+    margin-left:60%;
+}
+.item8 > a > img:hover {
+    border-radius:20px;
+    background-color: rgba(255, 255, 255);
+}
+.item7{
+    margin-top:2%;
+    margin-left:5%;
+    color:white;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+.item9{
+    font-weight: bold;
+    font-size:300%;
+    color:white;
+    text-align:right;
+    margin-right:10%;
+}
+.item6{
+    transform:rotate(-45deg);
+    margin-left:20%;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style_contacto.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <style>
+        body{
+            padding:  0% 20% 1% 20%;
+            background:url('img/fondo9.png') fixed no-repeat;
+            background-size:100%;
+        }
+
+        .item1 { grid-area: header; }
+        .item2 { grid-area: img; }        
+        .item3 { grid-area: redes1; }
+        .item4 { grid-area: redes2; }
+        .item5 { grid-area: button; }
+
+        .grid-container {
+            padding:1% 1% 1% 1%;
+            border-radius:30px;
+            display: grid;
+            grid-template-areas:
+            'header'
+            'img'
+            'redes1'
+            'redes2'
+            'button';
+            background-color: rgba(0, 0, 0);
+        }
+        .grid-container > div {
+            text-align: center;
+            padding: 10px 10px;
+            font-size: 30px;
+            color:white;
+        }
+        .item4 > a > img:hover {
+            border-radius:20px;
+            background-color: rgba(255, 255, 255);
+        }
+        input[type=submit] {
+            border-radius:30px;
+            font-size:15px;
+            padding:8px 10px 8px 10px;
+            color:black;
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+        }
+        input[type=submit]:hover {
+            background-color: grey;
+            color: white;
+        }
+        p{
+            text-align:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <div><p>Si tienes alguna pregunta sobre un tema que haya podido estudiar durante los
+                cursos que ya he realizado, no dudes en preguntarme</p></div>
+            <div>Estos son mis metodos de contacto</div>
+        </div>
+        <div class="item2"><img src="img/correu_tel1.png" width="50%"></div>
+        <div class="item3">Estas son mis redes sociales</div>
+        <div class="item4">
+            <a href=""><img src="img/facebook.png" width="8%"></a>
+            <a href=""><img src="img/twitter.png" width="7.5%"></a>
+            <a href=""><img src="img/instagram.png" width="8%"></a>
+            <a href=""><img src="img/youtube.png" width="8%"></a>
+        </div>
+        <div class="item5">
+            <form action="index.html">
+                <input type="submit" value="Volver" />
+            </form>
+        </div>
+    </div>
+</body>
+</html>
